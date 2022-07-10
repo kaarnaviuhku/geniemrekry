@@ -1,0 +1,352 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3fd7e34aedd30e1f78e1db5736d56d14",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "894a0b5c5d34c88b69b097f2aae1439730fa6836"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/894a0b5c5d34c88b69b097f2aae1439730fa6836",
+                "reference": "894a0b5c5d34c88b69b097f2aae1439730fa6836",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
+                "symfony/process": "^2.3"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "plugin-modifies-install-path": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Starbug",
+                "Thelia",
+                "Whmcs",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "joomla",
+                "known",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "mediawiki",
+                "miaoxing",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "pantheon",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "processwire",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "sylius",
+                "symfony",
+                "tastyigniter",
+                "typo3",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/1.x"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-03-15T21:23:54+00:00"
+        },
+        {
+            "name": "devgeniem/dustpress",
+            "version": "1.36.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devgeniem/dustpress.git",
+                "reference": "253de5c0f8ad0125c8981f5a3b695843abad1055"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devgeniem/dustpress/zipball/253de5c0f8ad0125c8981f5a3b695843abad1055",
+                "reference": "253de5c0f8ad0125c8981f5a3b695843abad1055",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.1"
+            },
+            "conflict": {
+                "devgeniem/dustpress-debugger": "<1.7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "dustpress.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Miika Arponen",
+                    "email": "miika.arponen@geniem.com",
+                    "homepage": "https://geniem.com/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ville Siltala",
+                    "email": "ville.siltala@geniem.com",
+                    "homepage": "https://geniem.com/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ismo Vuorinen",
+                    "email": "ismo.vuorinen@geniem.com",
+                    "homepage": "https://geniem.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "WordPress Theme Framework.",
+            "keywords": [
+                "dustjs",
+                "dustpress",
+                "framework",
+                "javascript",
+                "theme",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/devgeniem/dustpress/issues",
+                "source": "https://github.com/devgeniem/dustpress/tree/1.36.1"
+            },
+            "time": "2022-06-07T12:25:38+00:00"
+        },
+        {
+            "name": "devgeniem/dustpress-debugger",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devgeniem/dustpress-debugger.git",
+                "reference": "9ae2912497296c6a2b7bdd81f4856f8aeedf467d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devgeniem/dustpress-debugger/zipball/9ae2912497296c6a2b7bdd81f4856f8aeedf467d",
+                "reference": "9ae2912497296c6a2b7bdd81f4856f8aeedf467d",
+                "shasum": ""
+            },
+            "require": {
+                "devgeniem/dustpress": ">=1.28.0",
+                "php": ">=7.1"
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Miika Arponen",
+                    "email": "miika.arponen@geniem.com",
+                    "homepage": "http://geniem.com/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ville Siltala",
+                    "email": "ville.siltala@geniem.com",
+                    "homepage": "http://geniem.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides handy ajaxified debugger tool for DustPress based themes.",
+            "keywords": [
+                "debugger",
+                "dustjs",
+                "dustpress",
+                "framework",
+                "javascript",
+                "plugin",
+                "theme",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/devgeniem/dustpress-debugger/issues",
+                "source": "https://github.com/devgeniem/dustpress-debugger/tree/1.7.1"
+            },
+            "time": "2021-08-17T14:05:12+00:00"
+        },
+        {
+            "name": "devgeniem/dustpress-js",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devgeniem/dustpress-js.git",
+                "reference": "ff379516ae02f783933239e9d443b68fc9049b3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devgeniem/dustpress-js/zipball/ff379516ae02f783933239e9d443b68fc9049b3a",
+                "reference": "ff379516ae02f783933239e9d443b68fc9049b3a",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.0.12",
+                "devgeniem/dustpress": ">=1.25.0",
+                "php": ">=7.0"
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Miika Arponen",
+                    "email": "miika.arponen@geniem.com",
+                    "homepage": "https://github.com/Nomafin"
+                },
+                {
+                    "name": "Ville Siltala",
+                    "email": "ville.siltala@geniem.com",
+                    "homepage": "http://geniem.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A DustPress plugin that provides a handy JavaScript library for using your DustPress Model methods on the front end.",
+            "keywords": [
+                "debugger",
+                "dustjs",
+                "dustpress",
+                "framework",
+                "javascript",
+                "plugin",
+                "theme",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/devgeniem/dustpress-js/issues",
+                "source": "https://github.com/devgeniem/dustpress-js/tree/4.4.2"
+            },
+            "time": "2021-06-18T13:37:05+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "devgeniem/dustpress-js": 20,
+        "devgeniem/dustpress-debugger": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

@@ -1,0 +1,51 @@
+{>"shared/header" /}
+
+{! Open the Index context !}
+{#PageEvents}
+
+    {>"shared/hero"/}
+    <div class="main-content">
+        {! Open the Page context !}
+        {#Page}
+        <div class="main-content__hero">
+            <h1 class="hero__heading">{post_title}</h1>
+            <div class="hero__content">
+                {@content /}
+
+                <p>Today is {@strtodate value="{Today}"/} </p>
+            </div>
+        </div>
+        {/Page}
+        {! End the Page context !}
+
+        <div class="main-content__posts">
+            <div class="buttons">
+                <button id="future-events-button" class="toggle-button active">Future events</button>
+                <button id="all-events-button" class="toggle-button">All events</button>
+            </div>
+
+            {! Open the AllEvents context !}
+            {#FutureEvents}
+                <div id="future-events" class="events open">
+                    <h2>Future events</h2>
+                    {>"shared/event-list"/}
+                </div>
+            {/FutureEvents}
+            {! End the AllEvents context !}
+
+            {! Open the AllEvents context !}
+            {#AllEvents}
+                <div id="all-events" class="events">
+                    <h2>All events</h2>
+                    {>"shared/event-list"/}
+                </div>
+            {/AllEvents}
+            {! End the AllEvents context !}
+
+        </div>
+    </div>
+
+{/PageEvents}
+{! End the Index context !}
+
+{>"shared/footer" /}

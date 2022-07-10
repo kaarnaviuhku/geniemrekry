@@ -1,0 +1,10 @@
+<div class="events-list">
+    <div class="events-list__head">
+        <div class="events-list__start-date">Event starts</div>
+        <div class="events-list__end-date">Event ends</div>
+        <div class="events-list__title">Event name</div>
+    </div>
+    {#posts}
+        {>"shared/event-list-item"/}
+    {/posts}
+</div>

@@ -1,0 +1,13 @@
+{?content.image.id}
+    <div class="content-image">
+        <picture>
+            {@image id=content.image.id size="large" /}
+        </picture>
+    </div>
+{:else}
+    <div class="content-image">
+        <picture>
+            {@image id=FeaturedImage size="large" /}
+        </picture>
+    </div>
+{/content.image.id}

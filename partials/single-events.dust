@@ -1,0 +1,18 @@
+{>"shared/header" /}
+
+{#SingleEvents}
+
+    {>"shared/hero"/}
+    <div class="main-content" id="main-content">
+            <h1>{@title /}</h1>
+            <p>
+                <strong>Event starts:</strong> {@strtodate value="{content.fields.event_starts}"/}<br>
+                <strong>Event ends:</strong> {@strtodate value="{content.fields.event_ends}"/}
+            </p>
+            {@content /}
+            <p>{excerpt}</p>
+    </div>
+
+{/SingleEvents}
+
+{>"shared/footer" /}
