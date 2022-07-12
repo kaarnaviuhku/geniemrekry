@@ -13,10 +13,6 @@ class SingleEvents extends MiddleModel {
     public function content() {
         $single = Query::get_acf_post( get_the_ID() );
 
-        echo '<pre>';
-        print_r($single);
-        echo '</pre>';
-
         return $single;
     }
 }
