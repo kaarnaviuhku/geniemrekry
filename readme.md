@@ -20,15 +20,15 @@ Further instructions on how to develop with DustPress can be found at the [readm
 - [Nomafin](https://github.com/Nomafin)
 - [villesiltala](https://github.com/villesiltala)
 
-# Anni's notes for the project
+## Anni's notes for the project
 
-## Commands
+### Commands
 
 ```
 $ npm run build // Will build & compile project for development, but doesnt start watching.
 $ npm run watch // Will watch for changes and compile project for production. Will minify files.
 ```
 
-## Live site
+### Live site
 
 This project can be found live at [https://www.viuhku.net/geniemrekry/](https://www.viuhku.net/geniemrekry/)
