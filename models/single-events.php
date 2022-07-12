@@ -26,7 +26,7 @@ class SingleEvents extends MiddleModel {
         $string = strip_tags( get_the_content( get_the_ID() ) );
         $length = 30;
 
-        if (strlen($string) > $length) {
+        if ( strlen( $string ) > $length ) {
             $cut = substr( $string, 0, $length );
             $string = substr( $cut, 0, strrpos( $cut, ' ' ) ) . '...';
         }

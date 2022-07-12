@@ -24,7 +24,7 @@ class MiddleModel extends \DustPress\Model {
      *
      * @return array|bool|WP_Query
      */
-    protected function get_all_events( $page = 0, $per_page = 0 ) {
+    protected function get_all_events() {
 
         $args = [
             'post_type'                 => 'events',
@@ -50,9 +50,9 @@ class MiddleModel extends \DustPress\Model {
      *
      * @return array|bool|WP_Query
      */
-    protected function get_future_events( $page = 0, $per_page = 0 ) {
+    protected function get_future_events() {
 
-        $today = date('Ymd', time());
+        $today = date( 'Ymd', time() );
 
         $args = [
             'post_type'                 => 'events',

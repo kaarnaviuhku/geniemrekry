@@ -15,9 +15,8 @@ else {
     wp_die('DustPress must be installed when using the DustPress Starter Theme!');
 }
 
-// Define some constants.
-if ( ! defined( 'ASSETS_DIR' ) ) {
-    define( 'ASSETS_DIR', get_template_directory_uri() . '/assets' );
+if ( ! defined( 'DIST_DIR' ) ) {
+    define( 'DIST_DIR', get_template_directory_uri() . '/dist' );
 }
 
 /**
@@ -56,9 +55,8 @@ function scripts_and_styles() {
     $theme      = \wp_get_theme();
     $version    = $theme->get( 'Version' );
 
-    \wp_enqueue_script( 'theme-js', ASSETS_DIR . '/scripts/theme.js', [ 'jquery' ], $version, true );
-    \wp_enqueue_script( 'scripts-js', ASSETS_DIR . '/scripts/scripts.js', [ 'jquery' ], $version, true );
-    \wp_enqueue_style( 'theme-css', ASSETS_DIR . '/styles/style.css', [], $version, 'all' );
+    \wp_enqueue_script( 'scripts-js', DIST_DIR . '/scripts/scripts.js', [ 'jquery' ], $version, true );
+    \wp_enqueue_style( 'theme-css', DIST_DIR . '/styles/style.css', [], $version, 'all' );
 }
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\scripts_and_styles' );
@@ -68,11 +66,11 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\scripts_and_styles' );
  * Events custom post type.
  */
 function geniem_custom_post_types() {
-    register_post_type('events',
+    register_post_type( 'events',
         array(
             'labels'      => array(
-                'name'          => __('Events', 'geniem'),
-                'singular_name' => __('Event', 'geniem'),
+                'name'          => __( 'Events', 'geniem' ),
+                'singular_name' => __( 'Event', 'geniem' ),
             ),
                 'public'         => true,
                 'has_archive'    => false,
@@ -84,4 +82,4 @@ function geniem_custom_post_types() {
     );
 }
 
-add_action('init',  __NAMESPACE__ . '\\geniem_custom_post_types');
+add_action( 'init',  __NAMESPACE__ . '\\geniem_custom_post_types' );

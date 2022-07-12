@@ -28,7 +28,7 @@
             {#FutureEvents}
                 <div id="future-events" class="events open">
                     <h2>Future events</h2>
-                    {>"shared/event-list"/}
+                    {>"shared/events/list"/}
                 </div>
             {/FutureEvents}
             {! End the AllEvents context !}
@@ -37,7 +37,7 @@
             {#AllEvents}
                 <div id="all-events" class="events">
                     <h2>All events</h2>
-                    {>"shared/event-list"/}
+                    {>"shared/events/list"/}
                 </div>
             {/AllEvents}
             {! End the AllEvents context !}

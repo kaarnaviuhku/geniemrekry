@@ -14,19 +14,36 @@
         "email": "ville.siltala@geniem.com",
         "homepage": "http://geniem.com/",
         "role": "Developer"
+    },
+    {
+        "name": "Anni Turkia",
+        "email": "anni.turkia@viuhku.net",
+        "homepage": "https://viuhku.net/",
+        "role": "Developer"
     }
   ],
+  "repositories":[
+    {
+        "type":"composer",
+        "url":"https://wpackagist.org",
+        "only": [
+            "wpackagist-plugin/*",
+            "wpackagist-theme/*"
+        ]
+    }
+],
   "keywords": [
     "wordpress", "dustjs", "dustpress", "theme"
   ],
   "license": "GPL-3.0",
   "minimum-stability": "dev",
   "require": {
-    "php": ">=5.4",
+    "php": ">=8.0",
     "devgeniem/dustpress": "^1.5.14",
     "composer/installers": "^1.0.12",
     "devgeniem/dustpress-js": "dev-master",
-    "devgeniem/dustpress-debugger": "dev-master"
+    "devgeniem/dustpress-debugger": "dev-master",
+    "wpackagist-plugin/advanced-custom-fields": "5.12.1"
   },
   "extra": {
     "installer-paths": {
