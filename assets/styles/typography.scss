@@ -1,0 +1,32 @@
+// Typography
+
+h1 {
+    font-size: $h1-font-size-mobile;
+    margin-top: 0;
+
+    @include media-tablet {
+        font-size: $h1-font-size-desktop;
+    }
+}
+
+h2 {
+    font-size: $h2-font-size-mobile;
+
+    @include media-tablet {
+        font-size: $h2-font-size-desktop;
+    }
+}
+
+a {
+    color: $olive;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+sub {
+    bottom: -1.2em;
+}

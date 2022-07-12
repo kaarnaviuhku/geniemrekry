@@ -10,7 +10,6 @@
                 <strong>Event ends:</strong> {@strtodate value="{content.fields.event_ends}"/}
             </p>
             {@content /}
-            <p>{excerpt}</p>
     </div>
 
 {/SingleEvents}

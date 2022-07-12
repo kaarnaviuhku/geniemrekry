@@ -11,9 +11,7 @@
 <body class="{#WP.body_class}{.}{@sep} {/sep}{/WP.body_class}">
 
 <div class="top-bar">
-    <div class="top-bar-left">
-        <a href="{WP.url}">{WP.name}</a> &bull; <a href="{WP.url}/events">Events</a>
-    </div>
+    {@menu menu_name="primary_navigation" ul_id="primary-menu" ul_classes="menu primary-menu" show_submenu=false /}
 </div>
 
 <div class="main-container">

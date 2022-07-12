@@ -20,14 +20,14 @@
 
         <div class="main-content__posts">
             <div class="buttons">
-                <button id="future-events-button" class="toggle-button active">Future events</button>
+                <button id="future-events-button" class="toggle-button active">Ongoing & future events</button>
                 <button id="all-events-button" class="toggle-button">All events</button>
             </div>
 
             {! Open the AllEvents context !}
             {#FutureEvents}
                 <div id="future-events" class="events open">
-                    <h2>Future events</h2>
+                    <h2>Ongoing & future events</h2>
                     {>"shared/events/list"/}
                 </div>
             {/FutureEvents}

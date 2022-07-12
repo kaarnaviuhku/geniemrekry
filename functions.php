@@ -77,7 +77,7 @@ function geniem_custom_post_types() {
                 'menu_position'  => 5,
                 'hierarchical'   => false,
                 'menu_icon'      => 'dashicons-calendar-alt',
-                'supports'       => array( 'title', 'editor', 'thumbnail' ),
+                'supports'       => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
         )
     );
 }

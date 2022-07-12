@@ -8,9 +8,10 @@ $sourcesanspro: 'Source Sans Pro', sans-serif;
 
 $regular: 400;
 $semibold: 600;
+$bold: 700;
 
 
-// Colors
+// Color variables
 
 $black: #000;
 $white: #fff;
@@ -23,3 +24,15 @@ $charcoal-light: #606878;
 $popstar: #B4656F;
 $green: #6F8F72;
 $olive: #646F4B;
+
+
+// Typography variables
+
+$body-font-size: rem(16px);
+$body-line-height: 150%;
+
+$h1-font-size-mobile: rem(24px);
+$h1-font-size-desktop: rem(34px);
+
+$h2-font-size-mobile: rem(20px);
+$h2-font-size-desktop: rem(24px);

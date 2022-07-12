@@ -1,28 +1,18 @@
 // General
 
 body {
-    background-color: $gainsboro;
+    background-color: $white;
     font-family: $sourcesanspro;
     color: $charcoal;
-}
+    font-size: $body-font-size;
+    line-height: $body-line-height;
 
-// Typography
-
-h1 {
-    margin-top: 0;
-}
-
-a {
-    color: $olive;
-    text-decoration: none;
-
-    &:focus,
-    &:hover {
-        text-decoration: underline;
+    @include media-tablet {
+        background-color: $gainsboro;
     }
 }
 
-// Top bar
+// Top bar & navigation
 
 .top-bar {
     height: 50px;
@@ -30,16 +20,30 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
     background-color: $charcoal;
     color: $white;
     
-    > * {
+    ul.primary-menu {
         padding: 0 20px;
+        margin: 0;
+        display: flex;
+        list-style-type: none;
+
+        li {
+            margin-right: 30px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            a {
+                color: $white;
+            }
+        }
     }
 
-    a {
-        color: $white;
+    @include media-tablet {
+        margin-bottom: 50px;
     }
 }
 
@@ -47,12 +51,20 @@ a {
 // Main
 
 .main-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto 100px;
+    max-width: 100%;
     padding: 20px;
-    background-color: $white;
-    border-radius: 3px;
+
+    @include media-tablet {
+        width: 80vw;
+        margin: 0 auto 100px;
+        padding: 20px;
+        background-color: $white;
+        border-radius: 3px;
+    }
+
+    @include media-desktop {
+        width: 800px;
+    }
 }
 
 
@@ -60,7 +72,7 @@ a {
 
 .content-image {
     @include aspectratio(1200px, 600px);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -77,15 +89,6 @@ a {
     align-items: center;
     position: relative;
     border-bottom: 1px solid $gainsboro;
-
-    // &:before {
-    //     content: '';
-    //     display: block;
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 1px;
-    //     background-color: $charcoal;
-    // }
 
     button {
         z-index: 100;
@@ -116,6 +119,25 @@ a {
 
 .events {
     display: none;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    h2 {
+        margin-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @include media-tablet {
+            margin-top: 20px;
+            padding-left: unset;
+            padding-right: unset;
+        }
+    }
+
+    @include media-tablet {
+        margin-left: unset;
+        margin-right: unset;
+    }
 
     &.open {
         display: block;
@@ -127,45 +149,101 @@ a {
 
 .events-list {
     width: 100%;
-    border-collapse: collapse;
     border: 0px solid transparent;
     margin-top: 20px;
 
-    &__head {
-        display: flex;
-        color: $white;
-        font-weight: $semibold;
-        background-color: $charcoal;
-    }
-
     &__row {
         display: flex;
+        align-items: center;
+        flex-wrap: wrap;
         color: $charcoal;
-
-        &:nth-child(odd) {
-            background-color: $lightgray;
-        }
+        border-bottom: 1px solid $gainsboro;
 
         &:focus,
         &:hover {
             color: $charcoal;
-            background-color: $gainsboro;
+            background-color: $lightgray;
             text-decoration: none;
+        }
+
+        &:last-of-type {
+            border-bottom: unset;
+        }
+
+        @include media-tablet {
+            flex-wrap: nowrap;
+            border-bottom: unset;
+
+            &:nth-child(odd) {
+                background-color: $lightgray;
+            }
+
+            &:focus,
+            &:hover {
+                background-color: $gainsboro;
+            }
         }
     }
 
     &__start-date {
-        width: 20%;
-        padding: 10px;
+        width: 100%;
+        padding: 10px 20px 0;
+
+        @include media-tablet {
+            width: 20%;
+            padding: 10px;
+
+            .end-date {
+                display: none;
+            }
+        }
     }
 
     &__end-date {
-        width: 20%;
-        padding: 10px;
+        display: none;
+
+        @include media-tablet {
+            width: 20%;
+            padding: 10px;
+            display: block;
+        }
     }
 
     &__title {
-        width: 60%;
-        padding: 10px;
+        width: 100%;
+        padding: 0 20px 10px;
+        font-weight: $semibold;
+
+        @include media-tablet {
+            width: 60%;
+            padding: 10px;
+            font-weight: $regular;
+        }
+
+        .excerpt {
+            font-size: rem(14px);
+            color: $charcoal-light;
+            font-weight: $regular;
+            line-height: 100%;
+            padding: 3px 0 8px;
+
+            @include media-tablet {
+                font-size: rem(13px);
+            }
+        }
+    }
+
+    &__head {
+        display: none;
+        color: $white;
+        background-color: $charcoal;
+
+        > * {
+            font-weight: $semibold;
+        }
+
+        @include media-tablet {
+            display: flex;
+        }
     }
 }

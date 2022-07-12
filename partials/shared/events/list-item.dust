@@ -1,11 +1,13 @@
 <a class="events-list__row" href="{permalink}">
     <div class="events-list__start-date">
-        {@strtodate value="{fields.event_starts}"/}
+        {@strtodate value="{fields.event_starts}"/} 
+        <span class="end-date">&#8212; {@strtodate value="{fields.event_ends}"/}</span>
     </div>
     <div class="events-list__end-date">
         {@strtodate value="{fields.event_ends}"/}
     </div>
     <div class="events-list__title">
-        {post_title}
+        {post_title}<br>
+        <div class="excerpt">{post_excerpt}</div>
     </div>
 </a>
