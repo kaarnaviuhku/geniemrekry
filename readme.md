@@ -10,13 +10,6 @@ Add DustPress in the mix by requiring it via `composer` and using Composer's aut
 
 Then just activate the theme from the WordPress admin panel, and you are good to go!
 
-## Commands
-
-```
-$ npm run build // Will build & compile project for development, but doesnt start watching.
-$ npm run watch // Will watch for changes and compile project for production. Will minify files.
-```
-
 ## How to continue?
 
 Further instructions on how to develop with DustPress can be found at the [readme file](https://github.com/devgeniem/dustpress/blob/master/README.md) of the main project.
@@ -26,3 +19,16 @@ Further instructions on how to develop with DustPress can be found at the [readm
 - [devgeniem](https://github.com/devgeniem)
 - [Nomafin](https://github.com/Nomafin)
 - [villesiltala](https://github.com/villesiltala)
+
+# Anni's notes for the project
+
+## Commands
+
+```
+$ npm run build // Will build & compile project for development, but doesnt start watching.
+$ npm run watch // Will watch for changes and compile project for production. Will minify files.
+```
+
+## Live site
+
+This project can be found live at [https://www.viuhku.net/geniemrekry/](https://www.viuhku.net/geniemrekry/)
